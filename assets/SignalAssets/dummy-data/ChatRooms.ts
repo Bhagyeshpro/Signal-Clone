@@ -13,7 +13,8 @@ export default [{
     id: 'm1',
     content: 'btw, SpaceX is interested in buying notJust.dev!',
     createdAt: '2020-10-03T14:48:00.000Z',
-  }
+  },
+  newMessages: 3,
 }, {
   id: '2',
   users: [{
@@ -24,6 +25,7 @@ export default [{
     id: 'u3',
     name: 'Jeff',
     imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/jeff.jpeg',
+    gender: "Male",
   }],
   lastMessage: {
     id: 'm2',
@@ -119,7 +121,7 @@ export default [{
   }, {
     id: 'u9',
     name: 'Carlos',
-    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/3.jpg',
+    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/vadim.jpg',
   }],
   lastMessage: {
     id: 'm8',
@@ -135,9 +137,11 @@ export default [{
   }, {
     id: 'u10',
     name: 'Angelina Jolie',
-    imageUri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/4.jpg',
+    gender: "Female",
+    imageUri: 'https://blogger.googleusercontent.com/img/a/AVvXsEitj-JfP8DfrW0xY3y-2Ii5wPUgWpakU2WwmjN14niaM1bAvczg1pF-0jn3OjBP46vbV-eW1oFDNZATiUYBqfFGl0bNSa6Lf5b5-jBzMtls9eODFXRBKV0yEqve4JDesMPQZGEpwLefBzJ9TOC_vGZdQ_QFL-pwVtnKkMKIRQT0_LUgaQ0z1plm7x8S=s320',
   }],
-  lastMessage: {
+  newMessages: 7,
+  lastMessage: { 
     id: 'm9',
     content: 'Meet me at the same place',
     createdAt: '2020-09-25T15:40:00.000Z',
