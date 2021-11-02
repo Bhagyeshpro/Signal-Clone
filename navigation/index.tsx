@@ -39,13 +39,14 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 function RootNavigator() {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="Chat Room" component={ChatRoomScreen} options={ { headerShown: true }} />
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="ChatRoom" component={ChatRoomScreen} options={ { headerShown: true }} />
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      {/* <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} /> */}
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
         <Stack.Screen name="Modal" component={ModalScreen} />
       </Stack.Group>
-    </Stack.Navigator>
+    </Stack.Navigator>  
   );
 }
 
