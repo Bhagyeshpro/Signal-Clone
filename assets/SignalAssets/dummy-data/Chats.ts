@@ -65,6 +65,62 @@ export default {
 			id: 'u2',
 			name: 'Elon Musk',
 		},
-	}]
+	},
+	{
+		id: 'm8',
+		content: 'btw!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+		{
+		id: 'm9',
+		content: 'I am all set!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+	{
+		id: 'm10',
+		content: 'I am all set!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+	{
+		id: 'm11',
+		content: 'I am all set!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+	{
+		id: 'm12',
+		content: 'I am all set!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+	{
+		id: 'm13',
+		content: 'I am all set!',
+		createdAt: '2020-10-03T14:53:00.000Z',
+		user: {
+			id: 'u1',
+			name: 'Vadim',
+		},
+	},
+
+]
 }
 

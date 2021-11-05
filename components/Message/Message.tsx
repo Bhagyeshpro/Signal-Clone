@@ -1,30 +1,39 @@
 import React from 'react'
 import { View, Text, StyleSheet } from 'react-native'
+import Colors from '../../constants/Colors';
 
+const Message = ({ message }) => {
+    
+    const myID = "u1";
 
-const Message = () => {
-    const isMe = "true";
+    const isMe = message.user.id == myID;
 
     return (
-        <View style={[styles.container]}>
-            <Text style={styles.text}>Message</Text>
+        <View style={[styles.container, isMe ? styles.rightContainer : styles.leftContainer ]}>
+            <Text style={{color: isMe ? "#000" : "#fff"  }}>{message.content}</Text>
         </View>
     )
 
 }
-export default Message;
 
 const styles = StyleSheet.create({
-    text: {
-        color: "#fff",
-    },
     container: {
-        backgroundColor: "#3777f0",
+        backgroundColor: Colors.blue,
         padding: 10,
         margin: 10,
         borderRadius: 10,
-        width: "75%",
-        marginLeft: "calc(100% - 240px)",
-
-    }
+        maxWidth: "75%",
+    },
+    leftContainer: {
+    backgroundColor: Colors.blue,
+    marginLeft: 10,
+    marginRight: "auto",
+    },
+    rightContainer:{
+    backgroundColor: Colors.grey,
+    marginLeft: "auto",
+    marginRight: 10,
+    },
 })
+
+export default Message;

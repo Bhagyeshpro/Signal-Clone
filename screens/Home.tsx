@@ -2,8 +2,10 @@ import * as React from 'react';
 import { FlatList, Image, StyleSheet, Text, View } from "react-native";
 import ChatRoom from '../components/ChatRoomItems';
 
-import chatRoomData from "../assets/SignalAssets/dummy-data/ChatRooms";
+import chatRoomData from "../assets/SignalAssets/dummy-data/ChatRooms"
 import ChatRoomItems from '../components/ChatRoomItems';
+
+import Messages from "../components/Message/Message";
 
 const chatRoom1 = chatRoomData[8];
 const chatRoom2 = chatRoomData[1];
