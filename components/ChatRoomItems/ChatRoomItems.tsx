@@ -10,7 +10,9 @@ export default function ChatRoomItems({ chatRoom }) {
   const navigation = useNavigation();
 
   const onPress = () => { 
-    navigation.navigate("ChatRoom");
+    console.warn("Clicked on : ", user.name);
+    
+    navigation.navigate("ChatRoom", {id: chatRoom.id });
   }
   return (
     <Pressable onPress={onPress} style={styles.container}>
